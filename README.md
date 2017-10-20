@@ -1,2 +1,4 @@
 # php-Tutorials
-php tutorials collection
+
+Complete php tutorials collection with simple example...
+Link : www.skptricks.com
