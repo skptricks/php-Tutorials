@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+.button {
+background-color: #00BFFF ;
+font-weight: bold;
+padding: 12px 15px;
+color: #ffffff;
+}
+</style>
+<script>
+// request permission on page load
+document.addEventListener('DOMContentLoaded', function () {
+  if (!Notification) {
+    alert('Desktop notifications not available in your browser. Try Chromium.'); 
+    return;
+  }
+
+  if (Notification.permission !== "granted")
+    Notification.requestPermission();
+});
+
+function notifyBrowser( title, description , link ) {
+  if (Notification.permission !== "granted")
+    Notification.requestPermission();
+  else {
+    var notification = new Notification(title, {
+      icon: 'icon.png',
+      body: description,
+    });
+
+    notification.onclick = function () {
+      window.open(link);      
+    };
+
+  }
+
+}
+</script>
+</head>
+
+<body>
+
+<button class="button" onclick="notifyBrowser('Skptricks updates','New Post: Submit Checkbox values in Form with JQuery','http://www.skptricks.com')">Notify me!</button>
+
+</body>
+</html>
