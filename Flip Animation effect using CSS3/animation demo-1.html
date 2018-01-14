@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+.spinner {
+  width: 100px;
+  height: 100px;
+  background-color: #42a5f5;
+  margin: 100px auto;
+  -webkit-animation: rotate-div 1.2s infinite ease-in-out;
+  animation: rotate-div 1.2s infinite ease-in-out;
+}
+@keyframes rotate-div {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg); 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); 
+	 background-color: #ec407a;
+  }
+}
+</style>
+</head>
+<body>
+<center> <h1> Flip animation effect using CSS3  </h1> </center>
+<div class="spinner"></div>
+</body>
+</html>
