@@ -1,0 +1,49 @@
+<html>
+<head>
+    <style>
+        .spinner {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin: 50px auto;
+        }
+        .double-bounce1,
+        .double-bounce2 {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #42a5f5;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+            animation: sk-bounce 2.0s infinite ease-in-out;
+        }
+        .double-bounce2 {
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+        }
+        @keyframes sk-bounce {
+            0%, 100% {
+                transform: scale(0.0);
+                -webkit-transform: scale(0.0);
+            }
+            50% {
+                transform: scale(1.0);
+                -webkit-transform: scale(1.0);
+                background-color: #ec407a;
+            }
+        }
+    </style>
+</head>
+
+<body>
+	<center><h1>Circle Scale In and Out Animation effect. </h1> </center>
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+</body>
+
+</html>
