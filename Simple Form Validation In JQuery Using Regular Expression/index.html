@@ -1,0 +1,40 @@
+<html >
+<head>
+<link rel="stylesheet" type="text/css" href="design.css">
+<script src="jquery.min.js"></script>
+<script src="validation.js"></script>
+</head>
+
+<body>
+<b>User Registration validation page using jQuery</b>
+<div id="register">
+<h3>User Registration Page</h3>
+<form method="post" action="" name="login">
+
+<label>Username</label>
+<input type="text" id="username" autocomplete="off" />
+<span class="errorMsg" id="errorusername">*Please provide the valid username.</span>
+
+<label>Email</label>
+<input type="text" id="emailid" autocomplete="off" />
+<span class="errorMsg" id="erroremail">*Please provide the valid email-ID.</span>
+
+<label>Mobile</label>
+<input type="text" id="mobilenumber" autocomplete="off" />
+<span class="errorMsg" id="errormobile">*Please provide the valid mobile number.</span>
+
+<label>Website Link</label>
+<input type="text" id="websiteurl" autocomplete="off" />
+<span class="errorMsg" id="errorwebsite" >*Please provide the valid website url.</span>
+
+<label>Password</label>
+<input type="password" id="userpassword" autocomplete="off"/>
+<span class="errorMsg" id="errorpassword" >*Please provide the valid password.</span>
+
+
+<input type="submit" class="button" id="submitform" name="submitform" value="Register">
+</form>
+</div>
+
+</body>
+</html>
