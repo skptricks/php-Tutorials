@@ -1,0 +1,47 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.pulsate.js"></script>
+<style> 
+.button {
+width:260px;
+background-color: #00BFFF ;
+border-color: #3ac162;
+font-weight: bold;
+padding: 12px 15px;
+color: #ffffff;
+margin : 40px;
+float:left ;
+text-align:center;
+}
+  
+</style>
+ <script>
+    $(function () {
+     $(".pulse").pulsate();
+     $(".pulse1").pulsate({glow:false});
+     $(".pulse2").pulsate({color:"#800000"});
+     $(".pulse3").pulsate({reach:100});
+     $(".pulse4").pulsate({speed:2500});
+     $(".pulse5").pulsate({pause:1000});
+     $(".pulse6").pulsate({onHover:true});
+	 $(".pulse7").pulsate({
+	     color:"#FFC300",reach:50
+	 });	 
+    });
+	
+	
+ </script>
+</head>
+<body>
+   
+ <div class="button pulse"> $(".pulse").pulsate()</div> 
+ <div class="button pulse1"> $(".pulse1").pulsate({glow:false}) </div>
+ <div class="button pulse2"> $(".pulse2").pulsate({color:"#800000"}) </div> 
+ <div class="button pulse3"> $(".pulse3").pulsate({reach:100}) </div>   
+ <div class="button pulse4"> $(".pulse4").pulsate({speed:2500}) </div>
+ <div class="button pulse5">  $(".pulse5").pulsate({pause:1000}) </div>
+ <div class="button pulse6">  $(".pulse6").pulsate({onHover:true}) </div>
+ <div class="button pulse7">  Click Me </div> 
+ </body>
+ </html>
