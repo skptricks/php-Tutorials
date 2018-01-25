@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- custom css -->
+    <link href="datedropper.css" rel="stylesheet" type="text/css" />
+    <!-- jQuery lib -->
+    <script src="jquery.min.js"></script>
+    <!-- dateDropper lib -->
+    <script src="datedropper.js"></script>
+    <style>
+        input {
+            display: inline;
+            width: 20%;
+            padding: 10px;
+            margin: 15px;
+            border: solid 1px #BDC7D8;
+            margin-bottom: 20px;
+        }
+        input {}
+    </style>
+</head>
+
+<body>
+    <div style="width:500px;margin: 0px auto;">
+	    <h1> Credit Card Expiry Date. </h1> <br>
+        <!-- tag element -->
+        <input type="text" data-format="m" data-translate-mode="true" data-id="datedropper-1" readonly="">
+
+        <input type="text" data-format="Y" data-translate-mode="true" data-id="datedropper-1" readonly="">
+
+        <!-- init dateDropper -->
+        <script>
+            $('input').dateDropper();
+        </script>
+
+    </div>
+</body>
+
+</html>

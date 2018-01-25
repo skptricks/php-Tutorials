@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- custom css -->
+    <link href="datedropper.css" rel="stylesheet" type="text/css" />
+    <!-- jQuery lib -->
+    <script src="jquery.min.js"></script>
+    <!-- dateDropper lib -->
+    <script src="datedropper.js"></script>
+    <style>
+        input {
+            display: inline;
+            width: 30%;
+            padding: 10px;
+            margin: 15px;
+            border: solid 1px #BDC7D8;
+            margin-bottom: 20px;
+        }
+        input {}
+    </style>
+</head>
+
+<body>
+    <div style="width:500px;margin: 0px auto;">
+        <!-- tag element -->
+        Select Your Date :
+        <input type="text" data-large-mode="true" data-translate-mode="true" data-auto-lang="true" readonly="">
+        <!-- init dateDropper -->
+        <script>
+            $('input').dateDropper();
+        </script>
+
+    </div>
+</body>
+
+</html>
