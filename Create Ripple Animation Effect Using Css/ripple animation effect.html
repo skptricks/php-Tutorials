@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            background-color: #EEE;
+        }
+        div {
+            position: relative;
+            margin: 12px;
+            left: 22px;
+        }
+        #list {
+            width: 300px;
+            height: 55px;
+            border: 1px solid #d6d7da;
+            padding: 0px 15px 15px 15px;
+            border-radius: 5px;
+            font-family: arial;
+            line-height: 16px;
+            color: #333333;
+            font-size: 14px;
+            background: #ffffff;
+            top: 12px;
+            padding: 16px;
+            border-radius: 2px;
+            font-size: 28px;
+            text-align: center;
+        }
+        .button1 {
+            width: 200px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            padding: 16px;
+            border-radius: 2px;
+            font-size: 28px;
+            text-align: center;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+            background: #ff4040;
+        }
+        .button2 {
+            width: 200px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            padding: 16px;
+            border-radius: 2px;
+            font-size: 28px;
+            text-align: center;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+            background: #ffa96b;
+        }
+        .animation1 {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            background-color: #FFF;
+            top: 0;
+            left: 55px;
+            top: -13px;
+            transform: scale(0);
+            opacity: 0.5;
+            border-radius: 300px;
+        }
+        .animation2 {
+            position: absolute;
+            width: 230px;
+            height: 70px;
+            background-color: #FFF;
+            top: -14px;
+            left: -10px;
+            transform: scale(0);
+            opacity: 0.5;
+        }
+        .animation3 {
+            position: absolute;
+            width: 330px;
+            height: 90px;
+            background-color: #FFCCCC;
+            top: -14px;
+            left: -10px;
+            transform: scale(0);
+            opacity: 0.5;
+        }
+        .button1:hover > .animation1 {
+            animation: ripple1 2s;
+        }
+        .button2:hover > .animation2 {
+            animation: ripple2 2s;
+        }
+        #list:hover > .animation3 {
+            animation: ripple2 2s;
+        }
+        @keyframes ripple1 {
+            0% {
+                transform: scale(0);
+            }
+            20% {
+                transform: scale(1);
+                opacity: 0.3;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+        @keyframes ripple2 {
+            0% {
+                transform: scaleX(0);
+            }
+            20% {
+                transform: scaleX(1);
+                opacity: 0.3;
+            }
+            100% {
+                transform: scaleX(1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="button1">Animation 1
+        <div class="animation1"></div>
+    </div>
+    <br>
+    <div class="button2">Animation 2
+        <div class="animation2"></div>
+    </div>
+    <br>
+    <div id="list"> Animation 3
+        <div class="animation3"></div>
+    </div>
+</body>
+
+</html>
