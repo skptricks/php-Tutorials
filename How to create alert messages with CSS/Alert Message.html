@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .alert {
+            padding: 10px;
+            color: white;
+            opacity: 1;
+            transition: opacity 0.6s;
+            margin-bottom: 15px;
+            width: 400px;
+            display: none;
+        }
+        .alert.error {
+            background-color: #f44336;
+        }
+        .alert.success {
+            background-color: #4CAF50;
+        }
+        .alert.info {
+            background-color: #2196F3;
+        }
+        .alert.warning {
+            background-color: #ff9800;
+        }
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .closebtn:hover {
+            color: black;
+        }
+        button {
+            border: none;
+            cursor: pointer;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 2px;
+            font-size: 22px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+            background: #5cd38c;
+            margin: 3px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+
+            // on click remove alert message
+            $(document).on('click', 'div', function() {
+                $(this).hide();
+            });
+
+            $(".error").on("click", function() {
+                $(".error").show();
+            });
+            $(".success").on("click", function() {
+                $(".success").show();
+            });
+            $(".info").on("click", function() {
+                $(".info").show();
+            });
+            $(".warning").on("click", function() {
+                $(".warning").show();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Alert Messages</h2>
+    <p> when user click on button, it will display alert message </p>
+    <p> when user click on X, it will hide alert message </p>
+    <div class="alert error">
+        <span class="closebtn">&times;</span>
+        <strong>Danger!</strong> It's a Invalid Request.
+    </div>
+
+    <div class="alert success">
+        <span class="closebtn">&times;</span>
+        <strong>Success!</strong> Your Request Processed successfully.
+    </div>
+
+    <div class="alert info">
+        <span class="closebtn">&times;</span>
+        <strong>Information! We are providing new offers</strong> .
+    </div>
+
+    <div class="alert warning">
+        <span class="closebtn">&times;</span>
+        <strong>Warning!</strong> Invalid Request, please contact adminstration.
+    </div>
+
+    <button class="error"> Error </button>
+    <button class="success"> Success </button>
+    <button class="info"> Information </button>
+    <button class="warning"> Warning </button>
+</body>
+
+</html>
