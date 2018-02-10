@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>    
+    <style>
+        body {
+            background-color: #f1f1f1;
+        }
+        .main-container {
+            width: 500px;
+            height: 140px;
+            margin: 0px auto;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .main-container:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .EdgeButton {
+            border-radius: 100px;
+            box-shadow: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 20px;
+            padding: 6px 16px;
+            position: relative;
+            text-align: center;
+            white-space: nowrap;
+            background-color: #4AB3F4;
+            color: white;
+        }
+        textarea {
+            width: 450px;
+            height: 40px;
+            border: solid 2px #bedff6;
+            font-size: 14px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+           var getTextCount = $("textarea").val().length;
+		   
+			// on focus textarea box...
+            $("textarea").focus(function() {
+                $(this).animate({
+                    "height": "90px",
+                }, "fast");
+                $(".EdgeButton").slideDown("fast");
+
+            });
+			 $("textarea").keyup(function() {
+			   getTextCount = $("textarea").val().length;
+			 });
+
+            // on focus out textarea box...
+            $("textarea").focusout(function() {			
+			    if( getTextCount  <= 0 ){
+                $("textarea").animate({
+                    "height": "40px",
+                }, "fast");
+                $(".EdgeButton").slideUp("fast");
+				
+				}
+            });
+		  
+        });
+    </script>
+</head>
+
+<body>
+    <div style="position:fixed;right:10px;width:200px;background-color:#7ec0ee;padding:10px;text-align:center;color:white;font-weight:bold;"> <a href="http://www.skptricks.com/2018/02/twitter-like-expanding-textarea-box-with-jquery.html"> Download Now </a> </div>
+    <center>
+        <h1> <a href="http://www.skptricks.com/2018/02/twitter-like-expanding-textarea-box-with-jquery.html"> Twitter like Expanding Textbox with Jquery </h1> </a>
+    </center>
+
+    <div class="main-container">
+
+        <textarea></textarea>
+
+        <div style="float:right;margin-right:52px;">
+            <button class="EdgeButton" style="display:none;margin-top:10px;"> Tweet</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
