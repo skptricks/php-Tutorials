@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href="circle.css" rel="stylesheet" type="text/css">
+    <script src="progress-circle.js"></script>
+    <style>
+        body {
+            background-color: #f1f1f1;
+        }
+        .main-container {
+            width: 500px;
+            height: 140px;
+            margin: 0px auto;
+            background:white;
+			padding:10px;
+            
+        }
+        .main-container:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+		
+            // Display loader on first load...
+            $('#circle1').progressCircle({
+                nPercent: 50,
+                showPercentText: true,
+                circleSize: 120,
+                thickness: 6
+            });
+			
+			 // Display loader on first load...
+            $('#circle2').progressCircle({
+                nPercent: 30,
+                showPercentText: true,
+                circleSize: 99,
+                thickness: 6
+            });
+			
+			 // Display loader on first load...
+            $('#circle3').progressCircle({
+                nPercent: 90,
+                showPercentText: true,
+                circleSize: 70,
+                thickness: 6
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+	<div style="position:fixed;right:10px;width:200px;background-color:#7ec0ee;padding:10px;text-align:center;color:white;font-weight:bold;"> <a href="http://www.skptricks.com/2018/02/twitter-like-message-box-with-live-character-count.html"> Download Now </a> </div>
+<center> <h1> <a href="http://www.skptricks.com/2018/02/twitter-like-message-box-with-live-character-count.html"> Design Circle Progress indicator using Jquery and CSS3 </h1> </a>  </center>
+
+    <div class="main-container">
+	<div id="circle1"></div>
+	<div id="circle2"></div>
+	<div id="circle3"></div>
+       
+    </div>
+
+
+</html>
