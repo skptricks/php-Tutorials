@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-color:#e5e5e5;
+}
+
+#main-container{
+	width:600px;
+	margin:0px auto;
+}	
+.menu {
+    background-color: #ff6a80;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	font-weight:bold;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .menu {
+    background-color: #ff6a80;
+}
+</style>
+</head>
+<body>
+
+<div id="main-container">
+<h2>Dropdown Menu</h2>
+
+<div class="dropdown"  >
+  <button class="menu">Select Category</button>
+  <div class="dropdown-content">
+    <a href="#">Javascript</a>
+    <a href="#">Jquery</a>
+    <a href="#">PHP</a>
+	<a href="#">Java</a>
+	<a href="#">Reactjs</a>
+	<a href="#">Android</a>
+  </div>
+</div>
+
+</div>
+
+
+</body>
+</html>
