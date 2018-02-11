@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #menu-container {
+            width: 900px;
+            margin: 10px auto;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+        li:last-child {
+            border-right: none;
+        }
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        li a:hover:not(.active) {
+            background-color: #e7e7e7;
+        }
+        .active {
+            background-color: #ff3232;
+        }
+        @media screen and (max-width: 600px) {
+            li {
+                float: none;
+                right: 10px;
+                text-align: left;
+            }
+            li a {
+                text-align: left;
+            }
+            #menu-container {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--  <div style="position:fixed;right:10px;width:200px;background-color:#7ec0ee;padding:10px;text-align:center;color:white;font-weight:bold;"> <a href="http://www.skptricks.com/2018/02/horizontal-navigation-or-menu-bar-using-css.html"> Download Now </a> </div>	 -->
+
+    <div id="menu-container">
+
+        <ul>
+            <li><a class="active" href="#home">Home</a>
+            </li>
+            <li><a href="#PHP">PHP</a>
+            </li>
+            <li><a href="#JAVASCRIPT">JAVASCRIPT</a>
+            </li>
+            <li><a href="#JQUERY">JQUERY</a>
+            </li>
+            <li><a href="#AJAX">AJAX</a>
+            </li>
+            <li><a href="#REACTJS">REACTJS</a>
+            </li>
+            <li><a href="#HTML">HTML</a>
+            </li>
+            <li><a href="#about">About Us</a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
