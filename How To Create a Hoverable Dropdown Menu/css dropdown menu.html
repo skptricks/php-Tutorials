@@ -1,0 +1,49 @@
+<style>
+body{
+     background-color:#e5e5e5;
+	 margin:100px auto;
+	 width:500px;
+}
+ .dropdown {
+     position: relative;
+     display: inline-block;
+}
+ #button{
+     width:150px;
+     height:30px;
+     background-color:#ff3232 ;
+     padding:12px;
+     border-radius:5px;
+     font-weight:bold;
+     color:white;
+}
+ .dropdown-content {
+     top:30px;
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 260px;
+     min-heigth:400px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     padding: 12px 16px;
+     z-index: 1;
+}
+ .dropdown:hover .dropdown-content {
+     display: block;
+}
+
+</style>
+
+<div class="dropdown">
+  <span id="button">Mouse over me</span>
+  <div class="dropdown-content">
+    <p>Option One</p>
+	<p>Option Two</p>
+	<p>Option Three</p>
+	<p>Option Four</p>
+	<p>Option Five</p>
+	<p>Option Six</p>
+	
+  </div>
+</div>
+
