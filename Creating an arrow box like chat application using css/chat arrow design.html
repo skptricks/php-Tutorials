@@ -1,0 +1,51 @@
+<style>
+.div-left{
+	position:relative;
+	background:#87CEFA;		
+	width:300px;
+	padding:10px;	
+	border-radius:5px;
+	margin:10px;
+}
+.div-left:before{
+	content:"";
+	position:absolute;
+	width:0px;
+	height:0px;
+	border: 10px solid;
+	border-color: transparent #87CEFA transparent transparent;
+	left:-20px;
+	top:10px;
+}
+.div-right{
+	position:relative;
+	background:#87CEFA;		
+	width:300px;
+	padding:10px;	
+	border-radius:5px;
+}
+.div-right:before{
+	content:"";
+	position:absolute;
+	width:0px;
+	height:0px;
+	border: 10px solid;
+	border-color: transparent transparent transparent #87CEFA ;
+	right:-20px;
+	top:10px;
+}
+
+	
+</style>	
+
+<div style="width:500px;margin:40px auto;">
+
+<div class="div-left">
+ Hello everyone!!!
+</div>	
+
+<div class="div-right">
+ Hello everyone!!!
+</div>	
+	
+</div>	
