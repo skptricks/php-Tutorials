@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery ytLoad demo</title>
+<link href="ytLoad.jquery.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.transit.js"></script>
+<script type="text/javascript" src="ytLoad.jquery.js"></script>
+<script type="text/javascript">
+
+ $(document).ready(function() {
+    $.ytLoad();
+    // Perform ajax call...
+    $('#displayAjaxContent').load('ajax.php');               
+ });
+</script>
+		
+<style>
+body {
+margin: 0px;
+padding: 0px;
+background-color: #EBEBEB;
+border-bottom: 1px solid #e8e8e8;
+}
+#displayAjaxContent {
+width: 800px;
+margin: auto;
+margin-top: 15px;
+}
+</style>
+</head>
+<body>
+
+<div id="displayAjaxContent"> </div>
+
+</body>
+</html>
