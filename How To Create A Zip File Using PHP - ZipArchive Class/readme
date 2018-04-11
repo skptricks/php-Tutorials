@@ -1,0 +1,5 @@
+How to create a zip file using PHP - ZipArchive Class
+
+Today, we are going to discuss how to create a zip file in php. PHP has a ZipArchive class which can be used easily to create zip files. In this tutorial we will create a new zip file, update the existing zip file and moving or placing the files into specific directory or folder.
+
+https://www.skptricks.com/2018/04/how-to-create-zip-file-using-php.html
