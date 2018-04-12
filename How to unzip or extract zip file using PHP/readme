@@ -1,0 +1,11 @@
+This post explains how to unzip or extract a folder using PHP with the help of ZipArchive class. ZipArchive is a built in class of PHP and was introduced in PHP version 5.2 . This class will help you to unzip, zip or read zip file.
+
+
+
+How to unzip or extract zip file using PHP : https://www.skptricks.com/2018/04/how-to-unzip-or-extract-zip-file-using-php.html
+
+
+
+
+
+Recently we have posted a tutorial for creating a zip file using php and i think you should read about it to build more understanding on zip file creation process. In case of any questions, please do comment in comment box below.
