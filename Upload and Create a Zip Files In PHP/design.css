@@ -1,0 +1,14 @@
+
+form label, form input{display: block;margin-bottom: 5px;width: 90%}
+form input{ 
+padding: 10px;
+border: solid 1px #BDC7D8; 
+margin-bottom: 20px;
+}
+.button {
+background-color: #00BFFF ;
+border-color: #3ac162;
+font-weight: bold;
+padding: 12px 15px;
+color: #ffffff;
+}
