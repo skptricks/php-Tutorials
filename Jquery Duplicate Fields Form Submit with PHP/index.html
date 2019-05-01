@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/
+ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="reCopy.js"></script>
+<script type="text/javascript">
+$(function(){
+var removeLink = ' <a class="remove" href="#" onclick="$(this).parent().slideUp(function(){ $(this).remove() }); return false">remove</a>';
+
+$('a.add').relCopy({ append: removeLink}); 
+});
+</script>
+</head>
+
+<body>
+<form method="post" action="displayData.php">
+<p class="clone"> <input type="text" name="name[]" class='input'/></p>
+<p><a href="#" class="add" rel=".clone">Add More</a></p>
+<input type="submit" value=" Submit " />
+</form>
+</body>
+
+</html>
